@@ -1,0 +1,62 @@
+header {
+  background-color: #ddddd1;
+}
+
+.circular--portrait {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid #ddddd1;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+#nav1 {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #ddddd1;
+}
+
+.aboutContent {
+  text-align: justify;
+  line-height: 1.6;
+  padding: 60px 5px;
+}
+
+@media (max-width: 1020px) {
+  .circular--portrait {
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .aboutContent {
+    padding: 10px 5px;
+  }
+}
+
+@media (max-width: 375px) {
+  .circular--portrait {
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .aboutContent {
+    padding: 10px 5px;
+  }
+}
