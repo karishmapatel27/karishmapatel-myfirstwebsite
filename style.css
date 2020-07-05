@@ -6,6 +6,10 @@ body {
   min-height: 100%;
 }
 
+span {
+  color: #dc4e76;
+}
+
 .banner {
   position: relative;
   background: url(./image/fog-1209447_1280.jpg);
@@ -70,7 +74,7 @@ header {
 .btnD1 {
   display: inline-block;
   margin: 1em 0 0;
-  background: #ff2670;
+  background: #dc4e76;
   color: #fff;
   padding: 10px 20px;
   text-transform: uppercase;
