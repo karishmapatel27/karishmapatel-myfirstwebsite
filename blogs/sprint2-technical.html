@@ -1,8 +1,190 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles/main.css" />
+    <title>sprint2-technical blog</title>
   </head>
-  <body></body>
+  <!--  -->
+
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <header id="header" style="position: relative;">
+            <nav class="navbar navbar-expand-lg navbar-light" id="nav1">
+              <a class="navbar-brand" href="../index.html"
+                >K<span>a</span>rishma P<span>a</span>tel</a
+              >
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-lg-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="../index.html"
+                      >Home <span class="sr-only">(current)</span></a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../about.html">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../blog.html">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../contact.html">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </header>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row" id="s2tcontainer" style="margin-top: 90px;">
+          <div class="col-sm">
+            <h1>what is the difference between margin, border and padding?</h1>
+            <br /><br />
+            <p>
+              As a developer, you may code in multiple languages or on different
+              platforms so, it is ok if you don't remember the syntax, but
+              having a clear concept of the topic is very important. Beginners
+              who are new to coding often get confused when it comes to using
+              margin vs padding. They may not know the clear difference between
+              two or when to use them. <br /><br />
+
+              In this article, we will learn about margin, border and padding.
+            </p>
+            <p style="font-weight: bold;">what is margin?</p>
+
+            <p>
+              Margin is the CSS property which defines the space outside of the
+              element, space between the element border and another element. If
+              the element does not have any border, then the margin will create
+              a space from element content to the next outer element.
+              <br />
+              <br />
+              When you want to have a different margin for each side of an
+              element, you will have to set the property value individually. The
+              order of setting value for all side goes in clockwise. <br />
+
+              CSS has properties which will allow you to set margin for the
+              individual side of the element.
+            </p>
+            <dl>
+              <dd>Margin-top</dd>
+              <dd>Margin-right</dd>
+              <dd>Margin-bottom</dd>
+              <dd>Margin-left</dd>
+            </dl>
+            <br />
+            <p>
+              There is more than one way you can set the value for the margin
+              properties.
+            </p>
+            <dl>
+              <dd>Auto - the browser will calculate the margin</dd>
+              <dd>Length - margin in px, cm, pt, etc.</dd>
+              <dd>% - margin in % of the width of containing element</dd>
+              <dd>Inherit - inherit the margin from a parent element</dd>
+            </dl>
+            <br />
+            <br />
+
+            <p style="font-weight: bold;">what is padding?</p>
+            <p>
+              Padding is the CSS property which defines the space between the
+              element content, and it's border. If the element does not have any
+              border, then setting padding value will not have any effect.
+              <br />
+              Just like margin, you can set the value individually if you want
+              different padding on each side. The order of setting value for all
+              side goes in clockwise.<br />
+              CSS has properties which will allow you to set the padding for the
+              individual side of the element.
+            </p>
+            <dl>
+              <dd>Margin-top</dd>
+              <dd>Margin-right</dd>
+              <dd>Margin-bottom</dd>
+              <dd>Margin-left</dd>
+            </dl>
+            <p>
+              There is more than one way you can set the value for the padding
+              properties.
+            </p>
+            <dl>
+              <dd>Length - padding in px, cm, pt, etc..</dd>
+              <dd>% - padding in % of the width of containing element</dd>
+              <dd>Inherit - inherit the padding from a parent element</dd>
+            </dl>
+            <p style="font-weight: bold;">Margin and padding in action</p>
+            <p style="font-weight: bold;">what is padding?</p>
+            <p>
+              Border properties will allow you to have a specific style, width
+              and color of an element's border.
+              <br />
+              Border style: defines the style of the border
+            </p>
+            <dl>
+              <dd>dotted- Defines a dotted border</dd>
+              <dd>○ dash- Defines a dashed border</dd>
+              <dd>○ solid- Defines a solid border</dd>
+              <dd>Many more</dd>
+            </dl>
+            <p>
+              Border width: defines the width of the border.
+            </p>
+            <dl>
+              <dd>
+                The width can be set in px, cm, pt, em, etc. or by using
+                predefined values: thin, medium, thick
+              </dd>
+              <dd>You can also set the border for the individual side:</dd>
+            </dl>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Script -->
+    <!--  -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
