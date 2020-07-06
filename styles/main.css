@@ -1,6 +1,16 @@
 header {
   background-color: #ddddd1;
 }
+/* .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+} */
 
 .circular--portrait {
   position: relative;
@@ -8,13 +18,14 @@ header {
   height: 350px;
   overflow: hidden;
   border-radius: 50%;
-  border: 3px solid #ddddd1;
+  border: 3px solid black;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 25px;
+  margin-right: 10px;
+
+  /* margin-bottom: 25px; */
 }
 
-.circular--portrait img {
+.circular--portrait > img {
   width: 100%;
   height: auto;
 }
@@ -28,9 +39,12 @@ header {
 }
 
 .aboutContent {
-  text-align: justify;
+  text-align: left;
   line-height: 1.6;
-  padding: 60px 5px;
+  font-size: 20px;
+  padding-top: 70px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  /* padding: 60px 40px; */
 }
 
 @media (max-width: 1020px) {
@@ -43,20 +57,39 @@ header {
   }
 
   .aboutContent {
-    padding: 10px 5px;
+    padding: 5px 5px;
+    font-size: 16px;
+    margin-top: 25px;
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 414px) {
   .circular--portrait {
     width: 200px;
     height: 200px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   .aboutContent {
-    padding: 10px 5px;
+    padding: 5px 5px;
+    font-size: 16px;
   }
+}
+
+@font-face {
+  font-family: "libre_baskervilleregular";
+  src: url("librebaskerville-regular-webfont.woff2") format("woff2"),
+    url("librebaskerville-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "made_canvasregular";
+  src: url("made_canvas_regular_personal_use-webfont.woff2") format("woff2"),
+    url("made_canvas_regular_personal_use-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
