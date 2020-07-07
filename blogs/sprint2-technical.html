@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- social media icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <!--  -->
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
@@ -39,7 +42,7 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-lg-auto">
                   <li class="nav-item active">
-                    <a class="nav-link" href="../index.html"
+                    <a class="nav-link" id="logo" href="../index.html"
                       >Home <span class="sr-only">(current)</span></a
                     >
                   </li>
@@ -59,24 +62,28 @@
         </div>
       </div>
       <div class="container">
-        <div class="row" id="s2tcontainer" style="margin-top: 90px;">
+        <div class="row" id="s2tcontainer">
           <div class="col-sm">
-            <h1>what is the difference between margin, border and padding?</h1>
+            <h1>
+              What is the difference between margin, border, and padding in CSS?
+            </h1>
             <br /><br />
             <p>
               As a developer, you may code in multiple languages or on different
               platforms so, it is ok if you don't remember the syntax, but
               having a clear concept of the topic is very important. Beginners
-              who are new to coding often get confused when it comes to using
-              margin vs padding. They may not know the clear difference between
-              two or when to use them. <br /><br />
+              who are new to coding get confused when it comes to using margin
+              vs padding, and may not know the clear difference between the two.
+              <br /><br />
 
               In this article, we will learn about margin, border and padding.
             </p>
-            <p style="font-weight: bold;">what is margin?</p>
+            <p style="font-size: 20px; font-weight: bolder;">
+              Margin
+            </p>
 
             <p>
-              Margin is the CSS property which defines the space outside of the
+              Margin is the CSS property which defines the space outside of an
               element, space between the element border and another element. If
               the element does not have any border, then the margin will create
               a space from element content to the next outer element.
@@ -89,27 +96,27 @@
               CSS has properties which will allow you to set margin for the
               individual side of the element.
             </p>
-            <dl>
-              <dd>Margin-top</dd>
-              <dd>Margin-right</dd>
-              <dd>Margin-bottom</dd>
-              <dd>Margin-left</dd>
-            </dl>
+            <ul>
+              <li>Margin-top</li>
+              <li>Margin-right</li>
+              <li>Margin-bottom</li>
+              <li>Margin-left</li>
+            </ul>
             <br />
             <p>
               There is more than one way you can set the value for the margin
               properties.
             </p>
-            <dl>
-              <dd>Auto - the browser will calculate the margin</dd>
-              <dd>Length - margin in px, cm, pt, etc.</dd>
-              <dd>% - margin in % of the width of containing element</dd>
-              <dd>Inherit - inherit the margin from a parent element</dd>
-            </dl>
-            <br />
+            <ul>
+              <li>Auto - the browser will calculate the margin</li>
+              <li>Length - margin in px, cm, pt, etc.</li>
+              <li>% - margin in % of the width of containing element</li>
+              <li>Inherit - inherit the margin from a parent element</li>
+            </ul>
+
             <br />
 
-            <p style="font-weight: bold;">what is padding?</p>
+            <p style="font-size: 20px; font-weight: bolder;">Padding</p>
             <p>
               Padding is the CSS property which defines the space between the
               element content, and it's border. If the element does not have any
@@ -121,50 +128,111 @@
               CSS has properties which will allow you to set the padding for the
               individual side of the element.
             </p>
-            <dl>
-              <dd>Margin-top</dd>
-              <dd>Margin-right</dd>
-              <dd>Margin-bottom</dd>
-              <dd>Margin-left</dd>
-            </dl>
+            <ul>
+              <li>Margin-top</li>
+              <li>Margin-right</li>
+              <li>Margin-bottom</li>
+              <li>Margin-left</li>
+            </ul>
             <p>
               There is more than one way you can set the value for the padding
               properties.
             </p>
-            <dl>
-              <dd>Length - padding in px, cm, pt, etc..</dd>
-              <dd>% - padding in % of the width of containing element</dd>
-              <dd>Inherit - inherit the padding from a parent element</dd>
-            </dl>
-            <p style="font-weight: bold;">Margin and padding in action</p>
-            <p style="font-weight: bold;">what is padding?</p>
+            <ul>
+              <li>Length - padding in px, cm, pt, etc..</li>
+              <li>% - padding in % of the width of containing element</li>
+              <li>Inherit - inherit the padding from a parent element</li>
+            </ul>
+
+            <p style="font-size: 20px; font-weight: bolder;">
+              Margin and padding example
+            </p>
+
+            <img
+              src="../image/padding margin - Code.png"
+              alt="margin-padding code"
+              class="mx-auto d-block img-fluid"
+              id="img1"
+            />
+            <br />
+            <br />
+            <p style="font-size: 20px; font-weight: bolder;">Result</p>
+
+            <img
+              src="../image/padding margin - result.png"
+              alt="margin-padding code"
+              class="mx-auto d-block img-fluid"
+              id="img2"
+            />
+            <br />
+            <p style="font-size: 20px; font-weight: bolder;">Border</p>
             <p>
               Border properties will allow you to have a specific style, width
               and color of an element's border.
               <br />
               Border style: defines the style of the border
             </p>
-            <dl>
-              <dd>dotted- Defines a dotted border</dd>
-              <dd>○ dash- Defines a dashed border</dd>
-              <dd>○ solid- Defines a solid border</dd>
+            <ul>
+              <li>dotted- Defines a dotted border</li>
+              <li>dash- Defines a dashed border</li>
+              <li>solid- Defines a solid border</li>
               <dd>Many more</dd>
-            </dl>
+            </ul>
             <p>
               Border width: defines the width of the border.
             </p>
-            <dl>
-              <dd>
+            <ul>
+              <li>
                 The width can be set in px, cm, pt, em, etc. or by using
                 predefined values: thin, medium, thick
-              </dd>
-              <dd>You can also set the border for the individual side:</dd>
-            </dl>
+              </li>
+              <li>You can also set the border for the individual side:</li>
+            </ul>
+            <p style="font-size: 20px; font-weight: bolder;">Border example</p>
+            <br />
+            <img
+              src="../image/border - Code.png"
+              alt="margin-padding code"
+              class="mx-auto d-block img-fluid"
+              id="img3"
+            />
+            <br />
+            <br />
+            <p style="font-size: 20px; font-weight: bolder;">Result</p>
+
+            <img
+              src="../image/border-result.png"
+              alt="margin-padding code"
+              class="mx-auto d-block img-fluid"
+              id="img4"
+            />
             <br />
             <br />
             <br />
             <br />
-            <br />
+          </div>
+        </div>
+<div class="row">
+  <div class="col" style="padding-top: 90px;">
+    <h6 class="top"><a href="#logo">Back To Top &#8593;</a></h3>
+  </div>
+</div>
+        
+      </div>
+      <div class="container-fluid footer" style="margin-top: 60px;">
+        <div class="row">
+          <div class="col" style="text-align: center;">
+            <a href="https://www.facebook.com/santosh.patel.5623" target="_blank" style="text-decoration: none;"
+              class="fa fa-facebook"></a>
+            <a href="#" style="text-decoration: none;" class="fa fa-google"></a>
+            <a href="#" style="text-decoration: none;" class="fa fa-linkedin"></a>
+            <a href="https://github.com/karishmapatel27" target="_blank" style="text-decoration: none;"
+              class="fa fa-github"></a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col copyright">
+            <h6>Copyright&copy; 2020 Karishma Patel</h6>
           </div>
         </div>
       </div>
