@@ -246,6 +246,21 @@ header {
   color: grey;
 }
 
+/* sprint-4 cultural */
+.video {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+.video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* media query */
 
 @media (max-width: 1020px) {
